@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+ul li:nth-child(odd) {
+    background-color: lightblue;
+}
+
+ul li:nth-child(even) {
+    background-color: lightgreen;
+}
+
+ul li {
+    padding: 10px;
+    margin: 5px 0;
+    list-style: none;
+}
+
+/* 2. إضافة رمز قبل كل عنصر */
+ul li::before {
+    content: "✔ ";
+    color: green;
+    font-weight: bold;
+}
+
+input:focus {
+    border: 2px solid blue;
+    outline: none;
+    background-color: #eef6ff;
+}
+
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid gray;
+}
+
+a:hover {
+    color: white;
+    background-color: darkblue;
+}
