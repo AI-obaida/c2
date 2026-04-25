@@ -17,13 +17,19 @@ ul li {
     list-style: none;
 }
 
-/* 2. إضافة رمز قبل كل عنصر */
 ul li::before {
     content: "✔ ";
     color: green;
     font-weight: bold;
 }
-
+ul li {
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    margin: 5px 0;
+    list-style: none;
+}
 input:focus {
     border: 2px solid blue;
     outline: none;
